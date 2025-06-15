@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyCats - Blind people section</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-2e14-620a-8f2d-b76ebb29cda3/raw?se=2025-06-15T00%3A00%3A36Z&sp=r&sv=2024-08-04&sr=b&scid=1f040b2b-2d5f-5530-bb1f-9884038423a0&skoid=76024c37-11e2-4c92-aa07-7e519fbe2d0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-14T07%3A46%3A06Z&ske=2025-06-15T07%3A46%3A06Z&sks=b&skv=2024-08-04&sig=NF%2Biu5DpcGPb10Rsvn%2BWJCWYx3pT/Z2zbWVdtnXKCTE%3D">
+</head>
+<body class="light-mode">
+  <header>
+    <h1>Are you blind?</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/search" class="active">Search</a>
+      <a href="/upload">Upload</a>
+      <a href="/gallery">Bestest kitties</a>
+      <button id="theme-toggle">FLASHBANG</button>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="search-section">
+      <input type="text" id="search-input" placeholder="Search by title, category or tags...">
+      <button id="search-button">Search</button>
+    </section>
+    
+    <section class="search-results">
+      <h3>Results</h3>
+      <div class="pics-grid" id="search-results">
+        <!-- Filled by JavaScript -->
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Come on just use your eyes</p>
+  </footer>
+  
+  <script src="js/search.js"></script>
+</body>
+</html>
