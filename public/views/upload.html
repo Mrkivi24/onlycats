@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyCats drop it here</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    #upload-status {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    #title-color {
+      width: 50px;
+      height: 30px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <header>
+    <h1>Send us that stuff :3</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/search">Search</a>
+      <a href="/upload" class="active">Upload</a>
+      <a href="/gallery">Bestest kitties</a>
+      <button id="theme-toggle">Are you okay?</button>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="upload-form">
+      <form id="upload-form">
+        <div class="form-group">
+          <label for="image-upload">Select Image:</label>
+          <input type="file" id="image-upload" name="image" accept="image/*" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" placeholder="Cute puppy playing" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="dogs">Dogs</option>
+            <option value="cats">Cats</option>
+            <option value="birds">Birds</option>
+            <option value="wild">Wild Animals</option>
+            <option value="farm">Farm Animals</option>
+            <option value="exotic">Exotic Pets</option>
+            <option value="sleeping">Sleeping</option>
+            <option value="eating">NOM NOM food</option>
+            <option value="playing">Play time</option>
+            <option value="confused">Huuuh?</option>
+            <option value="cuddling">Sweet cuddler</option>
+            <option value="silly">Silly</option>
+            <option value="funny">BABAHAHAHA</option>
+            <option value="stinky">Stinky</option>
+            <option value="chubby">Chubby cats</option>
+            <option value="maincoon">Main coons >:3</option>
+            <option value="weird">Weird cats</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="tags">Tags (comma separated):</label>
+          <input type="text" id="tags" name="tags" placeholder="cute, puppy, playtime">
+        </div>
+        
+        <div class="form-group">
+          <label for="title-color">Title Color:</label>
+          <input type="color" id="title-color" name="title_color" value="#ff6b9d">
+          <span id="color-value">#ff6b9d</span>
+        </div>
+
+        <button type="submit" class="cta-button">Upload Picture</button>
+      </form>
+      
+      <div id="upload-status"></div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Remember Tobi pictures may load longer !</p>
+  </footer>
+  
+  <script src="js/upload.js"></script>
+</body>
+</html>
